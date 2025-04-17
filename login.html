@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute of &lt;form&gt; element</title>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+        div {
+            background-color: rgb(140, 240, 240);
+            width: 75%;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>User Input, using the &lt;form&gt; Element</h1>
+        <h2>Accepting user input, through the &lt;input&gt; Elements</h2>
+        <h3>Attributes of the &lt;form&gt; Elements</h3>
+        <h4>Registration</h4>
+        <form action="UserReg.php">
+            <fieldset><legend>User Registration</legend>
+                <label for="userN">Name : <input type="text" name="userN" id="userN">
+                </label><br><br>
+                <label for="mobNo">Mobile No : <input type="number" name="mNo" id="mobNo">
+                </label><br><br>
+                <label for="emailID">E-Mail ID : <input type="email" name="email" id="emailID">
+                </label><br><br>
+                <label for="passW">Password : <input type="password" name="pWord" id="passW">
+                </label><br><br>
+                <label for="conPW">Confirm Password : <input type="password" name="confirmPW"
+                    id="conPW"></label><br><br>
+                <input type="submit" name="registration" value="Register">
+            </fieldset>
+        </form>
+        <h4>User Login</h4>
+        <form action="LoginForm.php">
+            <fieldset><legend>User Login</legend>
+                <label for="uName">Username : <input type="text" name="uName" id="uName">
+                </label><br><br>
+                <label for="uPass">Password : <input type="password" name="uPass" id="uPass">
+                </label><br><br>
+                <input type="submit" name="login" value="Login">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
